@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/contact.css'; // Ensure this file exists
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -14,16 +15,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container p-8 text-center">
-      <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-md mx-auto">
+    <div className="contact-container">
+      <h1 className="contact-title">Contact Me</h1>
+      <form onSubmit={handleSubmit} className="contact-form">
         <input
           type="text"
           name="name"
           placeholder="Your Name"
           value={formData.name}
           onChange={handleChange}
-          className="p-2 border border-gray-300 rounded"
+          className="contact-input"
           required
         />
         <input
@@ -32,7 +33,7 @@ const Contact = () => {
           placeholder="Your Email"
           value={formData.email}
           onChange={handleChange}
-          className="p-2 border border-gray-300 rounded"
+          className="contact-input"
           required
         />
         <textarea
@@ -40,11 +41,11 @@ const Contact = () => {
           placeholder="Your Message"
           value={formData.message}
           onChange={handleChange}
-          className="p-2 border border-gray-300 rounded"
+          className="contact-textarea"
           rows="4"
           required
         />
-        <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded">
+        <button type="submit" className="contact-button">
           Send Message
         </button>
       </form>

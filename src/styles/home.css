@@ -1,8 +1,64 @@
-.text-white {
-  color: #fff;
-  background-color: #212529;
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  padding: 2rem;
+  background-color: #1c1c1c; /* Dark black background for home section */
 }
 
-.text-gray-600 {
-  color: #6c757d;
+.text-left {
+  max-width: 50%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fbbf24; /* Yellow for the main title */
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #f0f0f0; /* Light grey for secondary headings */
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+a {
+  font-size: 2rem;
+  color: #fbbf24; /* Yellow for links */
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #f59e0b; /* Lighter yellow for hover effect */
+}
+
+button {
+  margin-top: 1.5rem;
+  background-color: #fbbf24; /* Yellow button */
+  color: black; /* Black text on yellow button */
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #f59e0b; /* Slightly darker yellow for hover effect */
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; /* Circular image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 5px solid #fbbf24; /* Yellow border around the image */
+}
+p{
+  color:white;
 }

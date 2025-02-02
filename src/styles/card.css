@@ -1,0 +1,46 @@
+.card {
+    background: #2d2d2d; /* Dark grey background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    min-height: 150px; /* Ensure uniform height */
+    width: 100%; /* Make each card fit its grid cell */
+}
+
+/* Hover and Click Animation */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.2rem;
+    color: #fbbf24; /* Yellow color for card titles */
+    margin-bottom: 8px;
+}
+
+/* Card Description */
+.card-description {
+    font-size: 0.9rem;
+    color: #f0f0f0; /* Light grey color for description */
+    margin-bottom: 10px;
+}
+
+/* Learn More Button */
+.card-link {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: white;
+    background: #fbbf24; /* Yellow button background */
+    padding: 7px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.card-link:hover {
+    background: #f59e0b; /* Slightly darker yellow for hover */
+}

@@ -1,0 +1,67 @@
+/* Contact Form Container */
+.contact-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: #2d2d2d; /* Dark grey background for the contact container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Title */
+.contact-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fbbf24; /* Yellow color for the title */
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input Fields */
+.contact-input, .contact-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+    background-color: #333; /* Dark background for input fields */
+    color: #f0f0f0; /* Light grey text for inputs */
+}
+
+/* Input Focus */
+.contact-input:focus, .contact-textarea:focus {
+    border-color: #fbbf24; /* Yellow border on focus */
+    outline: none;
+}
+
+/* Submit Button */
+.contact-button {
+    background: #fbbf24; /* Yellow background for the submit button */
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Button Hover */
+.contact-button:hover {
+    background: #f59e0b; /* Darker yellow on hover */
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .contact-container {
+        width: 90%;
+    }
+}

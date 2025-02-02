@@ -32,7 +32,27 @@
   .button:hover {
     background-color: #0056b3;
   }
-  
+
+  .home, .about, .project, .contact {
+    background-color: #2d2d2d;  /* Dark grey for sections, lighter than the navbar/footer */
+    padding: 2rem;
+    color: white;
+}
+
+.home h2, .about h2, .project h2, .contact h2 {
+    color: #fbbf24;  /* Yellow for headings */
+}
+
+.home a, .about a, .project a, .contact a {
+    color: #fbbf24;  /* Yellow color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.home a:hover, .about a:hover, .project a:hover, .contact a:hover {
+    color: #f59e0b;  /* Lighter yellow for hover effect */
+}
+
   /* Responsive Design */
   @media (max-width: 768px) {
     .header {

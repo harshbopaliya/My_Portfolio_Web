@@ -1,24 +1,14 @@
-footer {
-    background-color: #1f2937;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  
-  footer p {
-    margin: 0;
-    font-size: 1rem;
-  }
-  
-  footer a {
-    color: #3b82f6;
-    margin: 0 0.5rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  footer a:hover {
-    color: #60a5fa;
-  }
-  
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c1c;  /* Same dark black shade as navbar */
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.footer-text {
+  text-align: center;
+  color: #fbbf24; /* Yellow color for footer text */
+}

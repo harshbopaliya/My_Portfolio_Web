@@ -1,0 +1,24 @@
+.projects-container {
+    max-width: 800px; /* Adjust width */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title Styling */
+.projects-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fbbf24; /* Yellow color for the project section title */
+    margin-bottom: 1.5rem;
+}
+
+/* 🛠 FIXED: 2 Columns & 3 Rows Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* EXACTLY 2 columns */
+    grid-template-rows: repeat(3, auto); /* EXACTLY 3 rows */
+    gap: 1rem; /* Adjust spacing */
+    justify-content: center;
+    align-items: start;
+}
