@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { Home } from "./components/Home";
+import { About } from ".components/About";
+import { Projects } from "./components/Projects";
+import { Contact } from "./components/Contact";
+import "./styles/app.css";
+import "./styles/index.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="min-h-screen bg-gray-100 text-gray-900">
+        <nav className="p-4 bg-blue-600 text-white flex justify-between">
+          <h1 className="text-xl font-bold">My Portfolio</h1>
+          <div>
+            <Link className="mx-2" to="/">Home</Link>
+            <Link className="mx-2" to="/about">About</Link>
+            <Link className="mx-2" to="/projects">Projects</Link>
+            <Link className="mx-2" to="/contact">Contact</Link>
+          </div>
+        </nav>
+        <div className="p-6">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
